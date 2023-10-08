@@ -20,9 +20,5 @@ export default function GetProducts() {
   useEffect(() => {
     getProducts();
   }, []);
-  return (
-    <>
-      <Products products={data} />
-    </>
-  );
+  return <>{data === null ? <p></p> : <Products products={data} />}</>;
 }

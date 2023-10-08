@@ -3,10 +3,7 @@ export default function Products(props: any) {
   console.log(products);
   return (
     <>
-      {products === null ? (
-        <p></p>
-      ) : (
-        products.map((product: any) => {
+      {products?.map((product: any) => {
           return (
             <div key={product.id}>
               <p>{product.title}</p>
@@ -14,7 +11,7 @@ export default function Products(props: any) {
               <img src={product.images[0]} />;
             </div>
           );
-        })
+        }
       )}
     </>
   );
