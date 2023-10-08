@@ -1,10 +1,10 @@
 import "./App.css";
-import GetProducts from "./componentes/getProducts";
+import Routers from "./components/router";
 
 function App() {
   return (
     <>
-      <GetProducts />
+      <Routers />
     </>
   );
 }
